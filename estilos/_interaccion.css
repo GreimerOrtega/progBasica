@@ -1,0 +1,42 @@
+/* Selector Clase para botones */
+.boton-accion {
+    /* Propiedad background-color */
+    background-color: #007bff;
+    /* Propiedad color */
+    color: white;
+    /* Propiedad padding */
+    padding: 10px 15px;
+    /* Propiedad border */
+    border: none;
+    /* Propiedad border-radius */
+    border-radius: 5px;
+    /* Propiedad cursor (por interacción) */
+    cursor: pointer;
+    /* Propiedad display */
+    display: block; /* Para que ocupe toda la línea (ejemplo) */
+}
+
+/* Selector Hermano Adyacente: p + button (para espaciado después del párrafo) */
+p + .boton-accion {
+    margin-top: 20px;
+}
+
+/* Selector de Pseudoclase: a:hover */
+.enlace-interactivo:hover {
+    /* Propiedad color */
+    color: orange;
+    /* Propiedad opacity */
+    opacity: 0.8;
+}
+
+/* Selector de Atributo: input[type="text"] */
+input[type="text"] {
+    /* Propiedad padding */
+    padding: 8px;
+    /* Propiedad border */
+    border: 2px solid #ccc;
+    /* Propiedad margin */
+    margin-top: 20px;
+    /* Propiedad display */
+    display: block; 
+}

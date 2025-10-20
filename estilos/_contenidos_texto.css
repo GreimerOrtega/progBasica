@@ -1,0 +1,39 @@
+/* Selector Tipo: h1 */
+h1 {
+    /* Propiedad color */
+    color: white;
+    /* Propiedad font-family */
+    font-family: Arial, sans-serif;
+    /* Propiedad font-size */
+    font-size: 2em;
+}
+
+/* Selector Tipo: h2 */
+h2 {
+    /* Propiedad color */
+    color: #4CAF50;
+    /* Propiedad margin */
+    margin-bottom: 10px;
+}
+
+/* Selector Descendiente: section p */
+section p {
+    /* Propiedad font-size */
+    font-size: 1.1em;
+    /* Propiedad color */
+    color: #555;
+    /* Propiedad margin */
+    margin-bottom: 15px;
+}
+
+/* Selector Clase: .introduccion */
+.introduccion {
+    /* Propiedad font-weight */
+    font-weight: 400; /* Normal */
+}
+
+/* Selector de Pseudoelemento: p::first-line */
+p::first-line {
+    /* Propiedad font-weight */
+    font-weight: bold;
+}

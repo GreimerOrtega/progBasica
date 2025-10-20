@@ -1,300 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mi primera página - Greimer Ortega</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de CSS Externo</title>
+
+  <link rel="stylesheet" href="estilos/_elementos_estructurales.css">
+  <link rel="stylesheet" href="estilos/_contenidos_texto.css">
+  <link rel="stylesheet" href="estilos/_interaccion.css">
 </head>
 
 <body>
-  <!-- ===================================== -->
-  <!-- BLOQUE 1: ESTRUCTURA GENERAL Y ENCABEZADO -->
-  <!-- ===================================== -->
-  <header>
-    <h1>Hola — Soy Greimer Ortega</h1>
-    <p class="bio">Aquí escribirás una breve biografía de 3-4 líneas.
-      Soy un estudiante de la universidad francisco fernandez de contreras seccion ocaña,
-      adicional trabajo como desarrollador de software desde hace 4 años donde me desempeño
-      como lider de proyecto.
-    </p>
+
+  <header id="cabecera">
+    <h1>Tipos de Selectores y Propiedades CSS</h1>
   </header>
 
-  <!-- ===================================== -->
-  <!-- BLOQUE 2: ETIQUETAS DE TEXTO -->
-  <!-- ===================================== -->
-  <section class="texto">
-    <h2>Etiquetas de texto</h2>
-    <p><strong>Incluye:</strong> &lt;h1&gt;-lt;h6&gt;, &lt;p&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;i&gt;, &lt;em&gt;,
-      &lt;blockquote&gt;, &lt;q&gt;, &lt;br&gt;, &lt;hr&gt;</p>
+  <section>
+    <h2>Selectores y Propiedades</h2>
+    <p class="introduccion">Este párrafo usa la clase "introduccion" y está dentro de una etiqueta section.</p>
 
-    <!-- Ejemplos -->
-    <h1>Ejemplo de &lt;h1&gt;</h1>
-    <h2>Ejemplo de &lt;h2&gt;</h2>
-    <h3>Ejemplo de &lt;h3&gt;</h3>
-    <h4>Ejemplo de &lt;h4&gt;</h4>
-    <h5>Ejemplo de &lt;h5&gt;</h5>
-    <h6>Ejemplo de &lt;h6&gt;</h6>
-
-    <p>Esto es un párrafo con la etiqueta &lt;p&gt;.</p>
-
-    <p>Texto en negrita con &lt;b&gt;negrita&lt;/b&gt;.</p>
-    <p>Texto en negrita con &lt;strong&gt;importante&lt;/strong&gt;.</p>
-
-    <p>Texto en cursiva con &lt;i&gt;cursiva&lt;/i&gt;.</p>
-    <p>Texto enfatizado con &lt;em&gt;énfasis&lt;/em&gt;.</p>
-
-    <blockquote>
-      Esto es un bloque de cita con &lt;blockquote&gt;.
-    </blockquote>
-
-    <p>Esto es una cita en línea con &lt;q&gt;“comillas”&lt;/q&gt; dentro del texto.</p>
-
-    <p>Esto es un ejemplo de salto de línea con &lt;br&gt;.<br>Esta línea está justo después del salto.</p>
-
-    <hr>
-
-  </section>
-  <!-- ===================================== -->
-  <!-- BLOQUE 3: ETIQUETAS DE AGRUPACIÓN -->
-  <!-- ===================================== -->
-  <section class="agrupacion">
-    <h2>Agrupación de contenido</h2>
-    <p><strong>Incluye:</strong> &lt;div&gt;, &lt;span&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;</p>
-  
-    <!-- Ejemplo sugerido -->
-    <div>
-      <article>
-        <h3>Título del artículo</h3>
-        <p>Este es un párrafo dentro del <code>&lt;article&gt;</code>, que contiene información principal.</p>
-      </article>
-  
-      <aside>
-        <p><strong>Nota lateral:</strong> Esta es una información adicional o comentario lateral dentro del <code>&lt;aside&gt;</code>.</p>
-      </aside>
-    </div>
-  
-    <main>
-      <section>
-        <h4>Sección principal</h4>
-        <p>Contenido dentro de una sección dentro del elemento <code>&lt;main&gt;</code>.</p>
-        <p>Podemos usar <span style="color: blue; font-weight: bold;">un <code style="color: blue;">&lt;span&gt;</code> para destacar texto en línea</span> sin crear un bloque nuevo.</p>
-      </section>
-    </main>
-  </section>
-  
-  
-
-  <!-- ===================================== -->
-  <!-- BLOQUE 4: ETIQUETAS SEMÁNTICAS -->
-  <!-- ===================================== -->
-  <section class="semantica">
-    <h2>Estructura semántica</h2>
-    <p><strong>Incluye:</strong> &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;</p>
-  
-    <header>
-      <h1>Mi Sitio Web</h1>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-  
-    <main>
-      <section id="blog">
-        <article>
-          <h2>Título del artículo 1</h2>
-          <p>Este es el contenido del primer artículo, con información interesante para los lectores.</p>
-        </article>
-  
-        <article>
-          <h2>Título del artículo 2</h2>
-          <p>Este es el contenido del segundo artículo, con detalles adicionales y ejemplos.</p>
-        </article>
-      </section>
-  
-      <aside>
-        <h3>Noticias recientes</h3>
-        <p>Aquí puedes encontrar noticias y actualizaciones relevantes.</p>
-      </aside>
-    </main>
-  
-    <footer>
-      <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
-    </footer>
-  </section>
-  
-
-  <!-- ===================================== -->
-  <!-- BLOQUE 5: ETIQUETAS DE TABLAS -->
-  <!-- ===================================== -->
-  <section class="tablas">
-    <h2>Tablas</h2>
-    <p><strong>Incluye:</strong> &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</p>
-    
-    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 600px;">
-      <caption><strong>Calificaciones de materias</strong></caption>
-      <thead>
-        <tr>
-          <th>Materia</th>
-          <th>Profesor</th>
-          <th>Calificación</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Matemáticas</td>
-          <td>Juan Pérez</td>
-          <td>9.5</td>
-        </tr>
-        <tr>
-          <td>Historia</td>
-          <td>Ana Gómez</td>
-          <td>8.7</td>
-        </tr>
-        <tr>
-          <td>Programación</td>
-          <td>Carlos Díaz</td>
-          <td>10</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="2"><strong>Promedio</strong></td>
-          <td>9.4</td>
-        </tr>
-      </tfoot>
-    </table>
+    <button class="boton-accion">Botón de Acción</button>
   </section>
 
-  <!-- ===================================== -->
-  <!-- BLOQUE 6: MULTIMEDIA -->
-  <!-- ===================================== -->
-  <section class="multimedia">
-    <h2>Contenido multimedia</h2>
-    <p><strong>Incluye:</strong> &lt;img&gt;, &lt;audio&gt;, &lt;video&gt;, &lt;figure&gt;, &lt;figcaption&gt;</p>
-    
-    <figure>
-      <img src="https://via.placeholder.com/400x200.png?text=Imagen+de+Ejemplo" alt="Ejemplo de imagen" width="400" height="200" />
-      <figcaption>Figura 1: Imagen de ejemplo con descripción.</figcaption>
-    </figure>
+  <input type="text" placeholder="Campo de texto">
 
-    <audio controls>
-      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
-      Tu navegador no soporta el elemento de audio.
-    </audio>
+  <a href="#" class="enlace-interactivo">Pasa el ratón aquí</a>
 
-    <br><br>
-
-    <video width="400" controls>
-      <source src="https://sample-videos.com/video123/mp4/480/asdasdas.mp4" type="video/mp4" />
-      Tu navegador no soporta el elemento de video.
-    </video>
-  </section>
-
-  <!-- ===================================== -->
-  <!-- BLOQUE 7: ENLACES E INTERACTIVIDAD -->
-  <!-- ===================================== -->
-  <section class="enlaces">
-    <h2>Enlaces y botones</h2>
-    <p><strong>Incluye:</strong> &lt;a&gt;, &lt;button&gt;, &lt;nav&gt;, &lt;link&gt;</p>
-
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="https://www.google.com" target="_blank" rel="noopener">Google (externo)</a></li>
-      </ul>
-    </nav>
-
-    <button type="button" onclick="alert('¡Has presionado el botón!')">Haz clic aquí</button>
-  </section>
-
-  <!-- ===================================== -->
-  <!-- BLOQUE 8: FORMULARIOS -->
-  <!-- ===================================== -->
-  <section class="formularios">
-    <h2>Formularios</h2>
-    <p><strong>Incluye:</strong> &lt;form&gt;, &lt;label&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt;, &lt;option&gt;, &lt;button&gt;</p>
-
-    <form action="#" method="post">
-      <label for="nombre">Nombre:</label><br />
-      <input type="text" id="nombre" name="nombre" required /><br /><br />
-
-      <label for="correo">Correo electrónico:</label><br />
-      <input type="email" id="correo" name="correo" required /><br /><br />
-
-      <label for="mensaje">Mensaje:</label><br />
-      <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br /><br />
-
-      <label for="motivo">Motivo del contacto:</label><br />
-      <select id="motivo" name="motivo" required>
-        <option value="" disabled selected>Seleccione una opción</option>
-        <option value="consulta">Consulta</option>
-        <option value="sugerencia">Sugerencia</option>
-        <option value="otro">Otro</option>
-      </select><br /><br />
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <!-- ===================================== -->
-  <!-- BLOQUE 9: LISTAS -->
-  <!-- ===================================== -->
-  <section class="listas">
-    <h2>Listas</h2>
-    <p><strong>Incluye:</strong> &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</p>
-
-    <h3>Lista de hobbies (ul)</h3>
-    <ul>
-      <li>Programar</li>
-      <li>Leer libros</li>
-      <li>Escuchar música</li>
-      <li>Hacer ejercicio</li>
-    </ul>
-
-    <h3>Lista ordenada de pasos (ol)</h3>
-    <ol>
-      <li>Planificar proyecto</li>
-      <li>Diseñar interfaz</li>
-      <li>Desarrollar código</li>
-      <li>Probar y corregir errores</li>
-    </ol>
-
-    <h3>Lista de definiciones (dl)</h3>
-    <dl>
-      <dt>HTML</dt>
-      <dd>Lenguaje de marcado para crear páginas web.</dd>
-
-      <dt>CSS</dt>
-      <dd>Lenguaje para definir estilos en páginas web.</dd>
-
-      <dt>JavaScript</dt>
-      <dd>Lenguaje de programación para añadir interactividad a la web.</dd>
-    </dl>
-  </section>
-
-  <!-- ===================================== -->
-  <!-- BLOQUE 10: PIE DE PÁGINA -->
-  <!-- ===================================== -->
-  <footer>
-    <h2>Pie de página</h2>
-    <p><strong>Incluye:</strong> &lt;footer&gt;, &lt;small&gt;, &lt;address&gt;, &lt;a&gt;</p>
-    <p>Recurso recomendado:
-      <a href="https://lenguajehtml.com/html/" target="_blank" rel="noopener">Lenguaje HTML</a>
-    </p>
-    <address>
-      Contacto: <a href="mailto:greimer@example.com">greimer@example.com</a><br />
-      Dirección: Calle Falsa 123, Ciudad, País
-    </address>
-    <small>© 2025 Greimer Ortega. Todos los derechos reservados.</small>
-  </footer>
 </body>
 
 </html>
